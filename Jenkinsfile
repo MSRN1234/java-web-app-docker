@@ -31,7 +31,7 @@ node{
           sh 'ssh -o StrictHostKeyChecking=no ubuntu@172.31.20.72 docker stop java-web-app || true'
           sh 'ssh  ubuntu@172.31.20.72 docker rm java-web-app || true'
           sh 'ssh  ubuntu@172.31.20.72 docker rmi -f  $(docker images -q) || true'
-          sh "ssh  ubuntu@172.31.20.72 ${dockerRun}"
+         
        }
        
     }
